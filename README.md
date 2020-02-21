@@ -5,28 +5,21 @@ Add one of this in front of the title
 ![status](https://img.shields.io/badge/-stopped-lightgrey)
 -->
 
-# Device Template ![status](https://img.shields.io/badge/-stopped-lightgrey)
+# Programmer Adapter ![status](https://img.shields.io/badge/-done-green)
 
-<!--
-Describe briefly but descritively the device
--->
+This board interfaces the SEGGER JLink to the boards of this collection
+
+![Programmer Adapter PCB](hardware/programmer-adapter.png)
 
 ## Features
 ### Functional
 
-<!--
-Features that anyone would understand
-Don't mention components or types of components (relays, transistors, etc)
-A good example: Makes sandiwiches for free!
-A bad example: SSR for quiet/durable operation
--->
+- Program and debug device
+- Power the device through this board
 
 ### Technical
 
-<!--
-Mention architectural features, be as technical as you can but briefly
-mention SSRs, operating frequency, etc
--->
+- None
 
 <!--- DON'T CHANGE BELLOW THIS LINE -->
 
