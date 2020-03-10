@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Programmer adapter"
-Date "2020-02-22"
-Rev "1.0.1"
+Date "2020-03-09"
+Rev "1.1.0"
 Comp "Chameleon Electronics "
 Comment1 ""
 Comment2 ""
@@ -42,7 +42,6 @@ F 3 "" H 4300 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 5000 3650
-NoConn ~ 5000 3750
 NoConn ~ 5000 3950
 NoConn ~ 5000 4350
 NoConn ~ 5000 4550
@@ -134,5 +133,9 @@ Text Label 7550 3900 0    50   ~ 0
 SWDCLK
 Text Label 7550 4100 0    50   ~ 0
 SWO
-NoConn ~ 7050 4000
+Text Label 5000 3750 0    50   ~ 0
+reset
+Text Label 7050 4000 2    50   ~ 0
+reset
+NoConn ~ 4400 3350
 $EndSCHEMATC
