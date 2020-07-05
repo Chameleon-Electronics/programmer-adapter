@@ -13,23 +13,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Connector:Conn_ARM_JTAG_SWD_20 J1
-U 1 1 5E4FBF88
-P 4400 4150
-F 0 "J1" H 3871 4196 50  0000 R CNN
-F 1 "Conn_ARM_JTAG_SWD_20" H 3871 4105 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x10_P2.54mm_Horizontal" H 4850 3100 50  0001 L TNN
-F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.dui0499b/DUI0499B_system_design_reference.pdf" V 4050 2900 50  0001 C CNN
-	1    4400 4150
-	1    0    0    -1  
-$EndComp
 Text Label 5000 4150 0    50   ~ 0
 SWDIO
 Text Label 5000 4050 0    50   ~ 0
 SWDCLK
-Text Label 5000 4250 0    50   ~ 0
-SWO
 $Comp
 L power:GND #PWR02
 U 1 1 5E4FCD55
@@ -43,8 +30,6 @@ F 3 "" H 4300 4950 50  0001 C CNN
 $EndComp
 NoConn ~ 5000 3650
 NoConn ~ 5000 3950
-NoConn ~ 5000 4350
-NoConn ~ 5000 4650
 $Comp
 L power:+3.3V #PWR01
 U 1 1 5E4FE2E4
@@ -57,48 +42,31 @@ F 3 "" H 4300 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even J2
-U 1 1 5E501B04
-P 7750 4050
-F 0 "J2" H 7800 4367 50  0000 C CNN
-F 1 "Target" H 7800 4276 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x03_P1.27mm_Vertical_SMD" H 7750 4050 50  0001 C CNN
-F 3 "~" H 7750 4050 50  0001 C CNN
-	1    7750 4050
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3.3V #PWR09
 U 1 1 5E508EC0
-P 7550 3950
-F 0 "#PWR09" H 7550 3800 50  0001 C CNN
-F 1 "+3.3V" H 7565 4123 50  0000 C CNN
-F 2 "" H 7550 3950 50  0001 C CNN
-F 3 "" H 7550 3950 50  0001 C CNN
-	1    7550 3950
+P 7800 3800
+F 0 "#PWR09" H 7800 3650 50  0001 C CNN
+F 1 "+3.3V" H 7815 3973 50  0000 C CNN
+F 2 "" H 7800 3800 50  0001 C CNN
+F 3 "" H 7800 3800 50  0001 C CNN
+	1    7800 3800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR010
 U 1 1 5E5092F6
-P 7550 4150
-F 0 "#PWR010" H 7550 3900 50  0001 C CNN
-F 1 "GND" H 7555 3977 50  0000 C CNN
-F 2 "" H 7550 4150 50  0001 C CNN
-F 3 "" H 7550 4150 50  0001 C CNN
-	1    7550 4150
+P 7800 4400
+F 0 "#PWR010" H 7800 4150 50  0001 C CNN
+F 1 "GND" H 7805 4227 50  0000 C CNN
+F 2 "" H 7800 4400 50  0001 C CNN
+F 3 "" H 7800 4400 50  0001 C CNN
+	1    7800 4400
 	1    0    0    -1  
 $EndComp
-Text Label 8050 4050 0    50   ~ 0
+Text Label 8300 4200 0    50   ~ 0
 SWDIO
-Text Label 8050 3950 0    50   ~ 0
+Text Label 8300 4000 0    50   ~ 0
 SWDCLK
-Text Label 8050 4150 0    50   ~ 0
-SWO
-Text Label 5000 3750 0    50   ~ 0
-reset
-Text Label 7550 4050 2    50   ~ 0
-reset
 $Comp
 L power:+5V #PWR03
 U 1 1 5ED5BE1C
@@ -211,4 +179,36 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22057B.pdf" H 6250 4250 50 
 	1    6250 4000
 	1    0    0    -1  
 $EndComp
+$Comp
+L IoT_Home:Conn_Chameleon_SWD J2
+U 1 1 5F02051F
+P 7800 4100
+F 0 "J2" H 8000 3700 50  0000 C CNN
+F 1 "Conn_Chameleon_SWD" H 8350 3800 50  0000 C CNN
+F 2 "IoT_Home:Chameleon_SWD_Header" H 7800 3800 50  0001 C CNN
+F 3 "https://github.com/Chameleon-Electronics/programmer-adapter" V 7450 2850 50  0001 C CNN
+	1    7800 4100
+	1    0    0    -1  
+$EndComp
+Text Label 7300 4000 2    50   ~ 0
+TX
+Text Label 7300 4200 2    50   ~ 0
+RX
+NoConn ~ 5000 3750
+NoConn ~ 5000 4250
+Text Label 5000 4350 0    50   ~ 0
+TX
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_20 J1
+U 1 1 5E4FBF88
+P 4400 4150
+F 0 "J1" H 3871 4196 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_20" H 3871 4105 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x10_P2.54mm_Horizontal" H 4850 3100 50  0001 L TNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.dui0499b/DUI0499B_system_design_reference.pdf" V 4050 2900 50  0001 C CNN
+	1    4400 4150
+	1    0    0    -1  
+$EndComp
+Text Label 5000 4650 0    50   ~ 0
+RX
 $EndSCHEMATC
