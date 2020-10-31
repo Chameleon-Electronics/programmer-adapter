@@ -30,4 +30,4 @@ Please file an issue with all the details you can provide and we will fix it for
 You are free to reach out and report issues, fix bugs and suggest new features as well as submit pull-requests.
 
 ## License
-You can use this at your will provided that you mention us properly by including a link to this page.
+You can use this at your will provided that you mention us properly by including a link to this page. For further information, consult the [LICENSE](LICENSE) file.
